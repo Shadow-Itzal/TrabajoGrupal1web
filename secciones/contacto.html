@@ -3,74 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../imagenes/index/camara-favicon.png">
     <title>Contacto</title>
+    <!-- estilos CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/213da3ef91.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-           <li>
-                <a href="../index.html">Inicio</a> 
-           </li>
-           <li>
-                <a href="./galeria.html">Galería</a>
-           </li>
-           
-           <li>
-                <a href="./conoceme.html">Conóceme</a>
-            </li>
-           <li>
-                <a href="contacto.html">Contacto</a>
-            </li> 
-        </ul>
-    </nav>
-    <h1>Contacto</h1>
-    <div class="contacto">
-        <h2>Fotografa</h2>
-        <h2><a href="" id="whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a><a href=""> +541170975959</a></h2>
-        <h2><a href="" id="mail"><i class="fa-solid fa-envelope"></i></i></a><a href=""> fotografia@fotografia.com</a></h2>
-        <h2><a href="" id="instagram"><i class="fa-brands fa-square-instagram"></i></a><a href=""> @Fotografia</a></h2>
-        <h2><a href="" id="ubicacion"><i class="fa-solid fa-location-dot"></i></a> Balcarce 78, C1064 Cdad. Autónoma de Buenos Aires</h2>
+    <header>
+        <!-- enlace ancla (volver) -->
+        <nav id="volver">
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a> 
+                </li>
+                <li>
+                    <a href="./galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="./conoceme.html">Conóceme</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li> 
+            </ul>
+        </nav>
+    </header>
 
-        <div>
-            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8443001789847!2d-58.374565074259685!3d-34.608098472952726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1715489720022!5m2!1ses-419!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-    <div id="formulario">
-        <form action="mailto:fotografias@fotografias.com">
+    <main class="brillos">
+
+        <div class="separacion">
             <br>
-            <div>
-                <label for="nombre">Nombre
-                 <br><input type="text" name="nombre" required>
-            </label>
-            </div>
-            <div>
-                <label for="mail">Mail <br><input type="text"></label>
-                
-            </div>
-            <div>
-                <label for="Telefono">Telefono <br><input type="text" required></label>
-                
-            </div>
+        </div>
+
+        <div class="contacto-titulo">
+            <h1>Contacto</h1>
+            <h2>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto.</h2>
+        </div>
+
+        <div class="contacto">
+            <h2>Carolina Silva</h2>
+            <h2><a href="#" id="whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a><a href=""> +541170975959</a></h2>
+            <h2><a href="#" id="mail"><i class="fa-solid fa-envelope"></i></i></a><a href="#"> fotografia@fotografia.com</a></h2>
+            <h2><a href="#" id="instagram"><i class="fa-brands fa-square-instagram"></i></a><a href="#"> @Fotografia</a></h2> <br>
+            <h2><a href="#" id="ubicacion"><i class="fa-solid fa-location-dot"></i></a> Balcarce 78, C1064 Cdad. Autónoma de Buenos Aires</h2> <br>
 
             <div>
-                <label for="fecha">Fecha del evento (mm/dd/yyyy) <br><input type="date"></label>
-                
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8443001789847!2d-58.374565074259685!3d-34.608098472952726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1715489720022!5m2!1ses-419!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
+
+        <div id="formulario">
+            <form action="mailto:fotografias@fotografias.com">
+                <br>
+                <div>
+                    <label for="nombre">Nombre
+                        <br><input type="text" name="nombre" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="mail">Mail <br><input type="text"></label>
+                </div>
+
+                <div>
+                    <label for="Telefono">Telefono <br><input type="text" required></label>
+                </div>
+
+                <div>
+                    <label for="fecha">Fecha del evento (mm/dd/yyyy) <br><input type="date"></label>
+                </div>
             
-            <div>
-                <label for="mensaje">Mensaje <br>
+                <div>
+                    <label for="mensaje">Mensaje <br>
                     <textarea name="mensaje" id="" maxlength="1500" minlength="50" cols="30" rows="10"></textarea></label>
-                
-            </div>
-            <div>
-                <button>Enviar</button>
-            </div>
-          
-    
-        </form>   
-    </div>
+                </div>
+
+                <div>
+                    <button>Enviar</button>
+                </div>
+
+            </form>   
+        </div>
+
+        <div class="separacion">
+            <br>
+        </div>
+    </main>
+
+    <footer>
+        <!--Enlace ancla (volver)-->
+        <a href="#volver">volver</a>
+        <br>
+        <br>
+        copyrigth 2024 - Derechos reservados de autor.
+    </footer>
 
 </body>
 </html>

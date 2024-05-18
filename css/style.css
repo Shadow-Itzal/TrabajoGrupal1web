@@ -706,6 +706,13 @@ footer a:hover{
     background-color: rgba(202, 157, 98, 0.52);
     float: left;
     margin: 20px;
+    object-fit: contain; /* ajusta la imagen dentro del contenedor */
+}
+
+.contenedor-texto-imagen h4 {
+    display: flex;
+    color: rgb(83, 53, 12);
+    font-size: 1.2rem;
 }
 
 
@@ -807,7 +814,7 @@ footer a:hover{
 }
 
 .frase1-negrita {
-    font-size: 1.6;
+    font-size: 1.6rem;
 }
 
 
@@ -859,49 +866,65 @@ footer a:hover{
 
 /* comienza CONTACTO */
 
-/*vista en laptop*/
+.contacto-titulo {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 1.5;
+}
+
+.contacto-titulo h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contacto-titulo h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 #formulario{
     background-color: rgb(202, 157, 98);
     border: 2px solid rgb(99, 77, 48);;
     padding: 10px;
     float: right;
     margin-right: 5%;
-    margin-top: 10%;
+    margin-top: 12%;
     width: 35%;
     border-radius: 2%;
 
-    
 }
 #formulario form div label input, textarea{
     border-radius: 2%;
-    
 }
-.contacto a{
-    text-decoration: none;
-    color: black;
-    
-    
-}
+
 .contacto{
     float: left;
     margin-top: 10%;
-    
+    margin-left: 50px ;
     padding: 10px;
     width: 45%;
     /*border: 2px solid black;*/
+    line-height: 1.3;
 }
+
+.contacto a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .menu{
     background-color: black;
 }
 
 #whatsapp{
     color: green;
-   
-
 }
+
 #mail{
     color: red;
 }
+
 #instagram{
     color: #be17c4
 }
@@ -909,6 +932,7 @@ footer a:hover{
 #ubicacion{
     color: red;
 }
+
 /*vista en Mobile */
 @media screen and (max-width:576px){
     #formulario{
@@ -952,7 +976,6 @@ footer a:hover{
 
     #mapa{
         width: 100%;
-       
         padding: 0%;
     }
     
