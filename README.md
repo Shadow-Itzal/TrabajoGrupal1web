@@ -1,2 +1,2 @@
-# TrabajoGrupal1web
-Primer trabajo en grupo python2024
+# Grupo-Practica
+ Practicas para el grupo de Python
